@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cooking-calculator/static/css/main.6741f3c0.chunk.css",
+    "main.js": "/cooking-calculator/static/js/main.a365929d.chunk.js",
+    "main.js.map": "/cooking-calculator/static/js/main.a365929d.chunk.js.map",
+    "runtime-main.js": "/cooking-calculator/static/js/runtime-main.6bf2e85a.js",
+    "runtime-main.js.map": "/cooking-calculator/static/js/runtime-main.6bf2e85a.js.map",
+    "static/js/2.83ddee46.chunk.js": "/cooking-calculator/static/js/2.83ddee46.chunk.js",
+    "static/js/2.83ddee46.chunk.js.map": "/cooking-calculator/static/js/2.83ddee46.chunk.js.map",
+    "index.html": "/cooking-calculator/index.html",
+    "precache-manifest.36f58a5beda8838b28554d3e529b492b.js": "/cooking-calculator/precache-manifest.36f58a5beda8838b28554d3e529b492b.js",
+    "service-worker.js": "/cooking-calculator/service-worker.js",
+    "static/css/main.6741f3c0.chunk.css.map": "/cooking-calculator/static/css/main.6741f3c0.chunk.css.map",
+    "static/js/2.83ddee46.chunk.js.LICENSE.txt": "/cooking-calculator/static/js/2.83ddee46.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/cooking-calculator/static/media/Roboto-Regular.11eabca2.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6bf2e85a.js",
+    "static/js/2.83ddee46.chunk.js",
+    "static/css/main.6741f3c0.chunk.css",
+    "static/js/main.a365929d.chunk.js"
+  ]
+}
