@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Dropdown menu for units in Scale
 const UnitOptionsS = (props) => { 
     return (
         <select value={props.data.selOption} onChange={props.handleOptions} className="selectU">

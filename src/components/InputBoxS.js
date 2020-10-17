@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Input box for Scale
 const InputBoxS = (props) => {
     return (
         <input 

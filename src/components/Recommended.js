@@ -19,6 +19,9 @@ const conv_arr = [
     [0.75, "3/4 cup"]
 ]
 
+//If the user wants to convert something to cups, tablespoons, or teaspoons, and the conversion gives a non-integer result,
+//the program will recommend realistic measurements to approximate that result.
+//Also used in Scale when scaling cups, tablespoons, or teaspoons.
 const Recommended = (props) => { 
     let recval
     let convertedval = convert(props.unitBvalue).from(props.unitB).to('cup');

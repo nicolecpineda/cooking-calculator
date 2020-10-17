@@ -27,9 +27,11 @@ class App extends React.Component {
     }
   }
 
+  //Handles dropdown menu to select unit in Convert
   handleOptionsC = event => {
     const {unitA, unitB, unitAvalue} = this.state;
     const rec_arr = ['cup', 'Tbs', 'tsp'];
+    //Changing either the top or bottom selector will change the bottom (result) value
     if(event.target.name === 'unitA') {
       const newBval = convert(unitAvalue).from(event.target.value).to(unitB);
       this.setState({
@@ -57,7 +59,7 @@ class App extends React.Component {
     }
   }
 
-
+  //Handles input box in Convert
   handleInputBoxC = event => {
     const {unitA, unitB} = this.state;
     const rec_arr = ['cup', 'Tbs', 'tsp'];
@@ -73,6 +75,8 @@ class App extends React.Component {
     }
   }
 
+  //Handles switch button in Convert
+  //Both values and units are switched
   handleSwitch = event => {
     const currUnitA = this.state.unitA;
     const currUnitB = this.state.unitB;
@@ -86,12 +90,14 @@ class App extends React.Component {
     })
   }
 
+  //Handles dropdown menu to select unit in Scale
   handleOptionsS = event => {
     this.setState({
       scaleUnit: event.target.value,
     })
   }
 
+  //Handles input box in Scale
   handleInputBoxS = event => {
     const {scaleUnit, scaleFactor} = this.state;
     if(scaleUnit === 'cup' || scaleUnit === 'Tbs' || scaleUnit === 'tsp') {
@@ -108,6 +114,7 @@ class App extends React.Component {
     }
   }
 
+  //Handles dropdown menu to select scaling factor in Scale
   handleScales = event => {
     const {scaleUnit, scaleAvalue} = this.state;
     if(scaleUnit === 'cup' || scaleUnit === 'Tbs' || scaleUnit === 'tsp') {
@@ -130,6 +137,7 @@ class App extends React.Component {
       <div className="container">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous"></link>
         <div className="row title">Cooking Calculator</div>
+        
         <div className="row">
           <div className="convert col-md">
             <div className="row title2">Convert</div>
@@ -145,6 +153,7 @@ class App extends React.Component {
             </div>
             { this.state.toggleRec ? <div><div className="row rec1">Recommended:</div><div className="row rec2"><Recommended unitB={this.state.unitB} unitBvalue={this.state.unitBvalue}/></div></div> : null }
           </div>
+          
           <div className="scale col-md">
             <div className="row title2">Scale</div>
             <div className="row scaleA">

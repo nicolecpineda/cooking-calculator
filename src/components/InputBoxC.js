@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Input box for Convert
 const InputBoxC = (props) => {
     return (
         <input 

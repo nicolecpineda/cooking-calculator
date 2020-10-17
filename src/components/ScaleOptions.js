@@ -17,6 +17,7 @@ const factors = [
     [6, "6x"],
 ]
 
+//Dropdown menu for scaling factors in Scale
 const ScaleOptions = (props) => { 
     return (
         <select value={props.data.selOption} onChange={props.handleScales} className="selectF">

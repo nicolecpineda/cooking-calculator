@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Dropdown menu for units in Convert
 const UnitOptionsC = (props) => { 
     return (
         <select value={props.data.selOption} onChange={props.handleOptions} name={props.data.name} className="selectU">
