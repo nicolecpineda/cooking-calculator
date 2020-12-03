@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ee3c5a0472447952b084986199535389",
+    "revision": "44da51bca957e2600aa989ab199b3689",
     "url": "/cooking-calculator/index.html"
   },
   {
-    "revision": "93c0015483f66a417867",
-    "url": "/cooking-calculator/static/css/main.6741f3c0.chunk.css"
+    "revision": "6f980b701e8043dc2cdc",
+    "url": "/cooking-calculator/static/css/main.4970548c.chunk.css"
   },
   {
     "revision": "14637a93c7bfb50fd9e1",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cooking-calculator/static/js/2.83ddee46.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "93c0015483f66a417867",
-    "url": "/cooking-calculator/static/js/main.e9d6721a.chunk.js"
+    "revision": "6f980b701e8043dc2cdc",
+    "url": "/cooking-calculator/static/js/main.ec149225.chunk.js"
   },
   {
     "revision": "160b986ae98d07d8123a",

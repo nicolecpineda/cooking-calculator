@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/cooking-calculator/static/css/main.6741f3c0.chunk.css",
-    "main.js": "/cooking-calculator/static/js/main.e9d6721a.chunk.js",
-    "main.js.map": "/cooking-calculator/static/js/main.e9d6721a.chunk.js.map",
+    "main.css": "/cooking-calculator/static/css/main.4970548c.chunk.css",
+    "main.js": "/cooking-calculator/static/js/main.ec149225.chunk.js",
+    "main.js.map": "/cooking-calculator/static/js/main.ec149225.chunk.js.map",
     "runtime-main.js": "/cooking-calculator/static/js/runtime-main.6bf2e85a.js",
     "runtime-main.js.map": "/cooking-calculator/static/js/runtime-main.6bf2e85a.js.map",
     "static/js/2.83ddee46.chunk.js": "/cooking-calculator/static/js/2.83ddee46.chunk.js",
     "static/js/2.83ddee46.chunk.js.map": "/cooking-calculator/static/js/2.83ddee46.chunk.js.map",
     "index.html": "/cooking-calculator/index.html",
-    "precache-manifest.4c2c3b1143aec19bec3f5c99564abf0e.js": "/cooking-calculator/precache-manifest.4c2c3b1143aec19bec3f5c99564abf0e.js",
+    "precache-manifest.de59846d11b38d8b3ca38731a9d597c5.js": "/cooking-calculator/precache-manifest.de59846d11b38d8b3ca38731a9d597c5.js",
     "service-worker.js": "/cooking-calculator/service-worker.js",
-    "static/css/main.6741f3c0.chunk.css.map": "/cooking-calculator/static/css/main.6741f3c0.chunk.css.map",
+    "static/css/main.4970548c.chunk.css.map": "/cooking-calculator/static/css/main.4970548c.chunk.css.map",
     "static/js/2.83ddee46.chunk.js.LICENSE.txt": "/cooking-calculator/static/js/2.83ddee46.chunk.js.LICENSE.txt",
     "static/media/App.css": "/cooking-calculator/static/media/Roboto-Regular.11eabca2.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.6bf2e85a.js",
     "static/js/2.83ddee46.chunk.js",
-    "static/css/main.6741f3c0.chunk.css",
-    "static/js/main.e9d6721a.chunk.js"
+    "static/css/main.4970548c.chunk.css",
+    "static/js/main.ec149225.chunk.js"
   ]
 }
