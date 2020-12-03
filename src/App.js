@@ -134,38 +134,42 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container-fluid">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous"></link>
         <div className="row title">Cooking Calculator</div>
         
-        <div className="row">
-          <div className="convert col-md">
-            <div className="row title2">Convert</div>
-            <div className="row convertA">
-              <InputBoxC data={{ currentVal: this.state.unitAvalue}} handleInput={this.handleInputBoxC}/>
-              <UnitOptionsC units={units} data={{ selOption: this.state.unitA, name: 'unitA'}} handleOptions = {this.handleOptionsC}/>
-              <img src="https://img.pngio.com/arrows-vertical-switch-arrow-orientation-swap-sort-icon-sort-icon-png-512_512.png" alt="switch button" className="switch" onClick={this.handleSwitch}/>
+        <div className="row main-row">
+          <div className="convert col-md-6">
+            <div className="col-content">
+              <div className="row title2">Convert</div>
+              <div className="row convertA">
+                <InputBoxC data={{ currentVal: this.state.unitAvalue}} handleInput={this.handleInputBoxC}/>
+                <UnitOptionsC units={units} data={{ selOption: this.state.unitA, name: 'unitA'}} handleOptions = {this.handleOptionsC}/>
+                <img src="https://img.pngio.com/arrows-vertical-switch-arrow-orientation-swap-sort-icon-sort-icon-png-512_512.png" alt="switch button" className="switch" onClick={this.handleSwitch}/>
+              </div>
+              <div className="row equals">=</div>
+              <div className="row convertB">
+                <div className="output">{this.state.unitBvalue !== '' ? Math.round(this.state.unitBvalue * Math.pow(10,5)) / Math.pow(10,5) : null}</div>
+                <UnitOptionsC units={units} data={{selOption: this.state.unitB, name: 'unitB'}} handleOptions = {this.handleOptionsC}/>
+              </div>
+              { this.state.toggleRec ? <div><div className="row rec1">Recommended:</div><div className="row rec2"><Recommended unitB={this.state.unitB} unitBvalue={this.state.unitBvalue}/></div></div> : null }
             </div>
-            <div className="row equals">=</div>
-            <div className="row convertB">
-              <div className="output">{this.state.unitBvalue !== '' ? Math.round(this.state.unitBvalue * Math.pow(10,5)) / Math.pow(10,5) : null}</div>
-              <UnitOptionsC units={units} data={{selOption: this.state.unitB, name: 'unitB'}} handleOptions = {this.handleOptionsC}/>
-            </div>
-            { this.state.toggleRec ? <div><div className="row rec1">Recommended:</div><div className="row rec2"><Recommended unitB={this.state.unitB} unitBvalue={this.state.unitBvalue}/></div></div> : null }
           </div>
           
-          <div className="scale col-md">
-            <div className="row title2">Scale</div>
-            <div className="row scaleA">
-              <InputBoxS data={{ currentVal: this.state.scaleAvalue}} handleInput={this.handleInputBoxS}/>
-              <UnitOptionsS units={units} data={{selOption: this.state.scaleUnit}} handleOptions = {this.handleOptionsS}/>
+          <div className="scale col-md-6">
+            <div className="col-content">
+              <div className="row title2">Scale</div>
+              <div className="row scaleA">
+                <InputBoxS data={{ currentVal: this.state.scaleAvalue}} handleInput={this.handleInputBoxS}/>
+                <UnitOptionsS units={units} data={{selOption: this.state.scaleUnit}} handleOptions = {this.handleOptionsS}/>
+              </div>
+              <div className="row scaleB">
+                <span className="scaleby">Scale By: </span>
+                <ScaleOptions data={{selOption: this.state.scaleFactor}} handleScales = {this.handleScales}/>
+              </div>
+              <div className="row equals">=</div>
+              <div className="row scaleC">{(this.state.toggleScaleRec && this.state.scaleAvalue !== '')? <Recommended unitB={this.state.scaleUnit} unitBvalue={this.state.scaleAvalue * this.state.scaleFactor}/> : (this.state.scaleAvalue !== ''? <span>{Math.round(this.state.scaleBvalue * Math.pow(10,5)) / Math.pow(10,5) + " " + this.state.scaleUnit}</span>: null)}</div>
             </div>
-            <div className="row scaleB">
-              <span className="scaleby">Scale By: </span>
-              <ScaleOptions data={{selOption: this.state.scaleFactor}} handleScales = {this.handleScales}/>
-            </div>
-            <div className="row equals">=</div>
-            <div className="row scaleC">{(this.state.toggleScaleRec && this.state.scaleAvalue !== '')? <Recommended unitB={this.state.scaleUnit} unitBvalue={this.state.scaleAvalue * this.state.scaleFactor}/> : (this.state.scaleAvalue !== ''? <span>{Math.round(this.state.scaleBvalue * Math.pow(10,5)) / Math.pow(10,5) + " " + this.state.scaleUnit}</span>: null)}</div>
           </div>
         </div>
       </div>

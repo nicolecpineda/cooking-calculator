@@ -7,7 +7,7 @@ const InputBoxC = (props) => {
             type= 'number'
             value={props.data.currentVal} 
             onChange={props.handleInput}
-            placeholder="Type here"
+            placeholder="Quantity"
             className="inputC"
         />
     )
